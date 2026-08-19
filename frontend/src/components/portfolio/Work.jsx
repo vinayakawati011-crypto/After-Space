@@ -172,7 +172,27 @@ const Project = ({ p, flip }) => {
 };
 
 export const Work = () => (
-  <section id="work" data-testid="work-section" className="px-4 md:px-6 py-32 md:py-40 bg-[#12100E]">
+  <section id="work"  data-testid="work-section" className="px-4 md:px-6 py-32 md:py-40 bg-[#12100E]"><div className="px-2 md:px-6 mb-24 flex flex-wrap gap-4">
+      <a
+        href="https://www.behance.net/gallery/254393043/Undergraduate-Architecture-Portfolio-2026"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-3 font-mono text-xs tracking-[0.2em] uppercase text-[#F2EFE9] border border-[#F2EFE9]/20 px-5 py-3 transition-colors duration-300 hover:border-[#D9381E] hover:text-[#D9381E]"
+      >
+        Behance
+        <span className="text-[#D9381E]">↗</span>
+      </a>
+
+      <a
+        href="https://drive.google.com/file/d/1crAHoN8t5XpT-SfmLDXF-Ceu9OYw-nBm/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-3 font-mono text-xs tracking-[0.2em] uppercase text-[#F2EFE9] border border-[#F2EFE9]/20 px-5 py-3 transition-colors duration-300 hover:border-[#D9381E] hover:text-[#D9381E]"
+      >
+        Download Portfolio
+        <span className="text-[#D9381E]">↓</span>
+      </a>
+    </div>
     <FadeUp className="mb-10 flex items-baseline justify-between px-2 md:px-6">
       <h2 className="font-serif font-light tracking-tighter text-[#F2EFE9] text-[clamp(2.6rem,8vw,7rem)] leading-none">
         Selected Work
