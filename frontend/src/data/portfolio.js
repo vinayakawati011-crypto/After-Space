@@ -44,7 +44,7 @@ export const projects = [
     category: "Architecture / Workplace Design",
     description:
       "Located in Mangaluru, AFTER reimagines the workplace as a flexible environment where work, collaboration, nature, and informal interaction come together. The project integrates dedicated offices, plug-and-play workspaces, shared amenities, and landscaped spaces to create a workplace that responds to the evolving ways people work.",
-    plates: ["/images/p04_0.jpg", "/images/p05_0.jpg", "/images/p07_0.jpg", "/images/p08_0.jpg"],
+    plates: ["`${process.env.PUBLIC_URL}/images/p04_0.jpg", "`${process.env.PUBLIC_URL}/images/p05_0.jpg", "`${process.env.PUBLIC_URL}/images/p07_0.jpg", "`${process.env.PUBLIC_URL}/images/p08_0.jpg"],
   },
   {
     id: "2plus",

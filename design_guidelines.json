@@ -1,0 +1,124 @@
+{
+  "theme": "Light Minimal Editorial Aesthetic",
+  "typography": {
+    "headings": {
+      "font_family": "Cormorant Garamond, serif",
+      "weights": ["300", "400", "600"],
+      "styles": ["normal", "italic"],
+      "description": "Used for the large kinetic hero, manifesto numbers, and project titles. Brings an elegant, editorial, high-end print magazine feel to the architecture portfolio."
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["300", "400", "500"],
+      "description": "Highly readable, geometric yet approachable sans-serif for project descriptions, metadata, and the manifesto text. Provides stark contrast to the serif headings."
+    },
+    "accents": {
+      "font_family": "JetBrains Mono, monospace",
+      "weights": ["400"],
+      "description": "Used sparingly for project metadata (Year, Location, Role) and the mailto links to emphasize the 'technical/blueprint' aspect of architecture."
+    },
+    "rules": [
+      "NO Inter, Roboto, or Space Grotesk allowed.",
+      "Headings (H1) max clamp(3rem, 8vw, 6rem). Implement tracking-tighter for impact.",
+      "Use ALL CAPS with tracking-[0.2em] for overlines and structural labels (e.g., 'PROJECT 01', 'LOCATION')."
+    ]
+  },
+  "colors": {
+    "background": {
+      "primary": "#F7F5F2",
+      "secondary": "#EAE6DF",
+      "description": "Warm off-white paper/oat tones. Simulates high-quality architectural print paper."
+    },
+    "text": {
+      "primary": "#121212",
+      "secondary": "#595959",
+      "description": "Ink black for primary text to ensure striking contrast. Slate/charcoal for secondary text."
+    },
+    "accent": {
+      "primary": "#D9381E",
+      "description": "A sharp 'Drafting Red' or 'Safety Orange-Red'. Use exceptionally sparingly (e.g., a single dot, hover line, or active state) to break the warmth."
+    }
+  },
+  "layouts": {
+    "hero": {
+      "style": "Kinetic & Editorial",
+      "description": "Full-height (min-h-screen) layout. Large typographic name 'VINAYAK AWATI' with masked line-by-line reveal on load. A subtle parallax hero moment with an architectural image (or texture). Include a slow editorial marquee ('Architecture | Photography | Experiments | Creative Work') at the bottom of the fold."
+    },
+    "about_manifesto": {
+      "style": "Numbered Chapters",
+      "description": "Editorial 2-column or asymmetrical layout. Large serif numbers ('01', '02') paired with the manifesto ('Good architecture is like good coffee...'). Generous spacing (py-32). Education and Skills presented in a crisp, tabular, grid-aligned format."
+    },
+    "projects_gallery": {
+      "style": "Scroll-Through Editorial",
+      "description": "No detail pages. A vertical or horizontal scroll-through gallery. Large edge-to-edge or generously padded imagery. Use sticky project titles or metadata as the images scroll past. Immersive, museum-like spacing."
+    },
+    "footer": {
+      "style": "Minimal Contact",
+      "description": "Massive typographic 'LET'S TALK' or email address. No contact form. mailto link and social links (Instagram @vinayaaaaaak_ & @vinayak.jpeg_) styled as clean text links with an underline hover animation."
+    }
+  },
+  "grids": {
+    "spacing_scale": "Use generous tailwind spacing: gap-16, gap-24, py-32, py-40.",
+    "alignment": "Optical alignment over geometrical. Use 12-column CSS grids but intentionally leave columns empty (e.g., col-span-5 col-start-2) to create negative space and tension."
+  },
+  "motion": {
+    "smooth_scroll": "Lenis MUST be implemented for smooth scrolling to give the site premium momentum and weight.",
+    "on_load": "Framer Motion line-by-line text reveal (using clip-path or overflow-hidden wrapper with y-axis translation).",
+    "scroll_reveals": "Images should reveal with a subtle scale-down and opacity fade on scroll. Text blocks should fade in gently.",
+    "parallax": "Hero image or gallery images should have a slight parallax effect (y-axis translation tied to scroll) to create depth."
+  },
+  "visual_enhancers": {
+    "textures": "Apply a very subtle SVG noise/grain overlay (opacity-20 or less) across the entire body to reinforce the 'print/paper' tactile feel.",
+    "borders": "Use 1px borders (#121212 at 10% opacity) to separate sections or create a strict architectural grid for the skills/experience section.",
+    "marquee": "Use react-fast-marquee. Slow speed (speed={30}). Serif font, uppercase, separated by distinct dots or stars."
+  },
+  "components": {
+    "marquee": "react-fast-marquee",
+    "motion": "framer-motion",
+    "icons": "lucide-react"
+  },
+  "media": {
+    "image_treatment": "No rounded corners on images (sharp edges only) to reflect architectural precision. Minimal overlays unless text must sit on top, then use black/20% gradient.",
+    "aspect_ratios": "Mix landscape (16:9), portrait (3:4), and square (1:1) within the gallery to create an editorial rhythm."
+  },
+  "image_urls": {
+    "hero_texture": {
+      "url": "https://images.unsplash.com/photo-1721244654394-36a7bc2da288?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwzfHxhcmNoaXRlY3R1cmFsJTIwdGVjaG5pY2FsJTIwZHJhd2luZyUyMGJsdWVwcmludHxlbnwwfHx8fDE3ODcxMTU5NzR8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Architectural blueprint, used as a subtle background or hero parallax layer."
+    },
+    "project_after": {
+      "url": "https://images.unsplash.com/photo-1770992161068-cff084f5ad04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBtaW5pbWFsaXN0JTIwYXJjaGl0ZWN0dXJlJTIwd29ya3NwYWNlJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzg3MTE1OTc0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "AFTER: IT workspace, Mangaluru. Modern office interior."
+    },
+    "project_edam": {
+      "url": "https://images.unsplash.com/photo-1724931282671-2d3bcd6de8f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w7NTY2OTV8MHwxfHNlYXJjaHwxfHxjb250ZW1wb3JhcnklMjB3ZWVrZW5kJTIwcmVzaWRlbmNlJTIwYXJjaGl0ZWN0dXJlJTIwZXh0ZXJpb3J8ZW58MHx8fHwxNzg3MTE1OTc0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "EDAM: Contemporary weekend residence, Belgaum. Small black contemporary house."
+    },
+    "project_antara": {
+      "url": "https://images.unsplash.com/photo-1763648520517-73c39dcd93f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w7NTY2NzR8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb250ZW1wb3JhcnklMjBsaWJyYXJ5JTIwaW50ZXJpb3IlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzg3MTE1OTc0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "ANTARA: Contemporary library, Ahmedabad. Modern library with glass ceiling."
+    },
+    "project_cad_chaos": {
+      "url": "https://images.unsplash.com/photo-1721244654392-9c912a6eb236?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwyfHxhcmNoaXRlY3R1cmFsJTIwdGVjaG5pY2FsJTIwZHJhd2luZyUyMGJsdWVwcmludHxlbnwwfHx8fDE3ODcxMTU5NzR8MA&ixlib=rb-4.1.0&q=85",
+      "description": "CAD CHAOS: Technical drawings."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'lenis' or '@studio-freight/react-lenis' for smooth scrolling.",
+    "Install 'framer-motion' for scroll reveals and kinetic typography.",
+    "Install 'react-fast-marquee' for the slow editorial marquee.",
+    "Use plain Tailwind CSS + HTML structure for the marketing layout, avoiding generic Shadcn cards to keep the design fluid and editorial.",
+    "Inject the Google Fonts 'Cormorant Garamond' and 'Manrope' into the main index.css or index.html.",
+    "Implement the 'masked line-by-line reveal': wrap text lines in an overflow-hidden span and translate Y from 100% to 0% using framer-motion.",
+    "Make sure images in the scroll-through gallery are large and impactful, avoiding cramped grid cells. Use max-width containers smartly."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not converge toward generic outputs. Use negative space aggressively (p-16, p-24) to create tension.",
+    "Ensure dark colors are not used as simplistic gradients. Solid, architectural colors only.",
+    "Create depth through scale contrast (massive serif typography next to tiny mono labels).",
+    "NEVER use generic centered layouts globally. Align left for text blocks, align right for project metadata, creating an asymmetrical editorial layout.",
+    "All interactive elements MUST include a 'data-testid' attribute (e.g., data-testid='contact-mailto-link').",
+    "Micro-animations are required on all hovers (e.g., links should have a sliding underline or color shift).",
+    "No placeholder URLs allowed; only use the provided image_urls."
+  ]
+}
