@@ -42,7 +42,7 @@ export const Hero = () => {
         className="relative z-0 mt-12 md:mt-8 -mx-6 md:-mx-12"
       >
         <motion.img
-          src="/images/p01_0.jpg"
+          src={`${process.env.PUBLIC_URL || ""}/images/p01_0.jpg`}
           alt="Portfolio cover render"
           data-testid="hero-image"
           style={{ opacity: imgOpacity, scale: imgScale, filter: imgBlur }}

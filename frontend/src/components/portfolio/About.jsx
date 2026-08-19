@@ -26,7 +26,7 @@ export const About = () => (
         <p className="text-base leading-relaxed text-[#8E897F] mt-12 max-w-lg">{profile.bioBody}</p>
       </FadeUp>
       <FadeUp delay={0.15} className="col-span-8 col-start-3 md:col-span-4 md:col-start-9 md:self-end">
-        <img src="/images/portrait.jpg" alt="Vinayak Awati portrait" data-testid="about-portrait" className="portrait-blend w-full h-auto grayscale" loading="lazy" />
+        <img src={`${process.env.PUBLIC_URL || ""}/images/portrait.jpg`} alt="Vinayak Awati portrait" data-testid="about-portrait" className="portrait-blend w-full h-auto grayscale" loading="lazy" />
         <p className="font-serif italic text-xl text-[#F2EFE9] mt-4" data-testid="about-portrait-caption">Vinayak</p>
       </FadeUp>
     </div>
